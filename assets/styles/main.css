@@ -13,6 +13,8 @@
   --bg: #263238;
   --h1-size: 40px;
   --h2-size: 36px;
+
+  --h3-size: 33px;
   --section-padding: 40px;
 }
 .container {
@@ -53,7 +55,7 @@ a {
   align-items: center;
 }
 .section-text{
-  font-size: 14px;
+  font-size: 16px;
   color: var(--text-color);
   line-height: 22px;
 }
@@ -174,4 +176,15 @@ font-size: 18px;
 }
 .col .container .img img{
   width: 80%;
+}
+.Our-Clients{
+  padding: var(--section-padding);
+}
+.Our-Clients .container p{
+  text-align: center;
+  padding: 10px 0;
+}
+.Our-Clients .container .icon{
+  margin: 20px 0;
+  gap:100px
 }
