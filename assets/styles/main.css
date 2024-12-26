@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #4caf4f;
+  --text-color: #717171;
+  --title-color: #4d4d4d;
+  --black: #000000;
+  --white: #ffffff;
+  --bg-alt: #f5f7fa;
+  --bg: #263238;
+  --h1-size: 40px;
+  --h2-size: 36px;
+  --section-padding: 40px;
+}
+.container {
+  padding: 0 15px;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.section-title {
+  text-align: center;
+  font-size: var(--h2-size);
+  color: var(--title-color);
+}
+
+header {
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  background-color: var(--white);
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+.container .logo {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+}
+
+header .container .logo a {
+  color: var(--black);
+  font-size: 22px;
+  font-weight: bold;
+}
+header .links {
+  margin-left: 120px;
+  font-size: 14px;
+}
+header .links a {
+  color: var(--main-color);
+}
+header .links .btn {
+  display: inline-block;
+  margin-left: 20px;
+  padding: 6px 20px;
+  color: var(--white);
+  border-radius: 8px;
+  background-color: var(--main-color);
+}
+header .links .btn a {
+  color: var(--white);
+}
+.nav input {
+  appearance: none;
+}
+.nav ul li a {
+  color: var(--bg);
+}
+
+@media (min-width: 991px) {
+  .nav label img {
+    display: none;
+  }
+  .nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .nav {
+    position: relative;
+  }
+  .nav ul {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    min-width: 180px;
+    border: 1px solid rgba(220, 220, 220, 0.4);
+  }
+  .nav label img {
+    cursor: pointer;
+  }
+  .nav input:checked + ul {
+    display: block;
+  }
+  .nav ul li a {
+    display: block;
+    margin: 5px;
+  }
+  .nav ul li:not(:last-child) {
+    border: 1px solid rgba(220, 220, 220, 0.4);
+  }
+}
